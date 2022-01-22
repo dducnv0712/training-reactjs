@@ -23,8 +23,10 @@ export class Child extends Component {
         }
     }
     sendMoneyToMother = () => {
+        //hàm gửi tiền từ con đến mẹ
         const {moneyInput,moneySent,moneyChild,isMoneySent} = this.state;
         let moneyInputPaste = parseInt(moneyInput);
+          //sẽ gửi đc nếu số tiền gửi mà lớn hơn số tiền hiện có
         if(moneyChild >= moneyInputPaste){
             this.setState({
                 moneySent:moneySent + moneyInputPaste,

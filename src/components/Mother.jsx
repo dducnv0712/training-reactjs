@@ -13,7 +13,7 @@ export class Mother extends Component {
             isSendSuccess:0
         }
     }
-
+    //hàm gửi tiền cho con
     handleSendMoney = () =>{
         const {moneyInput,money,moneySent} = this.state;
         let moneyInputParte = parseInt(moneyInput);
@@ -32,6 +32,7 @@ export class Mother extends Component {
         }
       
     }
+    //hàm nhận tiền từ con
     getMoneyFromChild = (moneyFromChild) =>{
         const {moneyReceived,money} = this.state;
         this.setState({
